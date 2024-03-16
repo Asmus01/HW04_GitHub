@@ -20,7 +20,7 @@ public class TestPageOfGithub {
         @Test
         void searchTextLike() {
             System.setProperty("chromeoptions.args", "--remote-allow-origins=*");
-            open("https://github.com");
+            open("/selenide/selenide");
             $(byText("Solutions")).hover();
             $(byText("Enterprise")).click();
             $("body").shouldHave(text("Build, secure, and ship software faster"));
