@@ -2,20 +2,16 @@ package selenide;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.DragAndDropOptions;
-import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 
-public class DragAndDrop {
+public class DragAndDrop2 {
 
     @BeforeAll
     static void beforeAll() {
-        Configuration.browser = "chrome";
         Configuration.browserSize = "1100x1080";
         Configuration.baseUrl = "https://the-internet.herokuapp.com/drag_and_drop";
     }
@@ -24,9 +20,9 @@ public class DragAndDrop {
     void DragAndDrop1() {
         System.setProperty("chromeoptions.args", "--remote-allow-origins=*");
         open("https://the-internet.herokuapp.com/drag_and_drop");
-        actions().moveToElement($("#column-b").dragAndDrop(DragAndDropOptions.to("#column-a")));
+        $("#column-b").dragAndDrop(DragAndDropOptions.to("#column-a"));
 
-
+;
 
     }
 }
