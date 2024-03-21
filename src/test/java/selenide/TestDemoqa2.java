@@ -36,8 +36,13 @@ public class TestDemoqa2 {
         $(byText("Male")).click();
 
         $("#dateOfBirthInput").click();
-        $("input.form-control").setValue(dateOfBirth).pressEscape();
-sleep(2000);
+        sleep(2000);
+        $(".react-datepicker__year-select").$(byText("1990")).click();
+        $(".react-datepicker__month-select").$(byText("April")).click();
+        $("div.react-datepicker__day--028").click();
+
+
+
 
         $("#subjectsContainer").setValue("IT");
         $("#hobbies-checkbox-1").click();
