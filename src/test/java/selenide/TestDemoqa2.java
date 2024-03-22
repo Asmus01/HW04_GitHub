@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class TestDemoqa2 {
@@ -32,23 +33,25 @@ public class TestDemoqa2 {
         $("#firstName").setValue(firstName);
         $("#lastName").setValue(lastName);
         $("#userEmail").setValue(email);
-
         $(byText("Male")).click();
 
         $("#dateOfBirthInput").click();
-        sleep(2000);
         $(".react-datepicker__year-select").$(byText("1990")).click();
         $(".react-datepicker__month-select").$(byText("April")).click();
         $("div.react-datepicker__day--028").click();
 
 
+        $("#subjectsInput").setValue("a");
+        $(byText("Maths")).click();
+        $("#subjectsInput").setValue("e");
+        $(byText("English")).click();
 
 
-        $("#subjectsContainer").setValue("IT");
-        $("#hobbies-checkbox-1").click();
-        $("#hobbies-checkbox-2").click();
-        $("#hobbies-checkbox-3").click();
-        $("#uploadPicture").click();
+        $(byText("Sports")).click();
+        $(byText("Reading")).click();
+        $(byText("Music")).click();
+
+        $("input#uploadPicture").click();
         $("#hobbies-checkbox-3").click();
 
 
