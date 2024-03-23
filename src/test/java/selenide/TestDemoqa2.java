@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import java.io.File;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
@@ -29,7 +30,7 @@ public class TestDemoqa2 {
         String currentAddress = "Ultimate st.,21";
         String login = "asmus";
         String password = "1234qwe";
-        String dateOfBirth = "21 Mar 1990";
+        String dateOfBirth = "28 April,1990";
         String filePath = "C:\\Users\\Ludmila\\Documents\\Справка.jpg";
 
         open("/automation-practice-form");
@@ -61,9 +62,11 @@ public class TestDemoqa2 {
         $("#city").click();
         $(byText("Karnal")).click();
         $("#submit").click();
-        sleep(3000);
 
-
+        $("tbody").shouldHave(text(firstName)).shouldHave(text(lastName)).shouldHave(text(email))
+        .shouldHave(text(mobile)).shouldHave(text(currentAddress)).shouldHave(text(dateOfBirth))
+        .shouldHave(text("Maths, English")).shouldHave(text("Sports, Reading, Music"))
+        .shouldHave(text("Male")).shouldHave(text("01.pdf")).shouldHave(text("Haryana Karnal"));
 
 
     }
