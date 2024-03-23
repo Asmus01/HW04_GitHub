@@ -10,10 +10,10 @@ import java.io.File;
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selectors.withText;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
-public class TestDemoqa2 {
+public class TestDemoqa2origin {
     @BeforeAll
     static void Beforeall() {
         Configuration.browserSize = "1100x1080";
@@ -44,25 +44,19 @@ public class TestDemoqa2 {
         $("#lastName").setValue(lastName);
         $("#userEmail").setValue(email);
 
-  //      $(byText("Male")).click();// not very good for other locales
-  //      $("#gender-radio-1").parent().click();// good
-   //     $("[for=gender-radio-1]").click();// good
+
         $("#genterWrapper").$(byText("Male")).click();// best
 
         $("#userNumber").setValue(mobile).click();
         $("#dateOfBirthInput").click();
 
-   //     $(".react-datepicker__year-select").$(byText("1990")).click();//
+
         $(".react-datepicker__year-select").selectOption("1990");
-   //     $(".react-datepicker__month-select").$(byText("April")).click();//
-   //     $(".react-datepicker__month-select").selectOption("04");//
         $(".react-datepicker__month-select").selectOption("April");
 
         $("div.react-datepicker__day--028").click();
-  //      $(".react-datepicker__day--030:not(.react-datepicker__day--outside-month)").click();//
 
-  //      $("#subjectsInput").setValue("a");
-  //      $(byText("Maths")).click();//
+
         $("#subjectsInput").setValue("Maths").pressEnter();
         $("#subjectsInput").setValue("e");
         $(byText("English")).click();
@@ -73,12 +67,12 @@ public class TestDemoqa2 {
         $("#hobbiesWrapper").$(byText("Music")).click();
 
         $("input#uploadPicture").uploadFile(new File(filePath));
-   //     $("input#uploadPicture").uploadFromClasspath("img/02.png");//
+
 
         $("#currentAddress").setValue(currentAddress);
 
         $("#state").click();
-   //     $(byText("Haryana")).click();//
+
         $("#react-select-3-option-2").click();
 
         $("#city").click();
