@@ -31,9 +31,11 @@ public class TestDemoqa2 {
         String login = "asmus";
         String password = "1234qwe";
         String dateOfBirth = "28 April,1990";
-        String filePath = "C:\\Users\\Ludmila\\Documents\\Справка.jpg";
+        String filePath = "C:\\Users\\Ludmila\\IdeaProjects\\HW04_GitHub\\src\\test\\data\\01.pdf";
 
         open("/automation-practice-form");
+        $("#app").shouldHave(text("Practice Form"));
+
         $("#firstName").setValue(firstName);
         $("#lastName").setValue(lastName);
         $("#userEmail").setValue(email);
@@ -54,7 +56,7 @@ public class TestDemoqa2 {
         $(byText("Reading")).click();
         $(byText("Music")).click();
 
-        $("input#uploadPicture").uploadFile(new File("src/test/data/01.pdf"));
+        $("input#uploadPicture").uploadFile(new File(filePath));
 
         $("#currentAddress").setValue(currentAddress);
         $("#state").click();
