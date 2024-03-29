@@ -1,0 +1,163 @@
+[1710411809.098][INFO]: Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 5961
+[1710411809.099][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1710411809.566][INFO]: [85344315ef32912001b1cff3fb12c940] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox", "--remote-allow-origins=*", "--window-size=900,1080" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "C:\\Users\\Ludmila\\IdeaProjects\\HW04_GitHub\\build\\downloads\\1710411808473_11488_1",
+               "plugins.always_open_pdf_externally": true,
+               "profile.default_content_setting_values.automatic_downloads": 1,
+               "safebrowsing.enabled": true
+            }
+         },
+         "pageLoadStrategy": "normal",
+         "unhandledPromptBehavior": "accept"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox", "--remote-allow-origins=*", "--window-size=900,1080" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "C:\\Users\\Ludmila\\IdeaProjects\\HW04_GitHub\\build\\downloads\\1710411808473_11488_1",
+            "plugins.always_open_pdf_externally": true,
+            "profile.default_content_setting_values.automatic_downloads": 1,
+            "safebrowsing.enabled": true
+         }
+      },
+      "pageLoadStrategy": "normal",
+      "unhandledPromptBehavior": "accept"
+   }
+}
+[1710411809.576][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "C:\\Users\\Ludmila\\IdeaProjects\\HW04_GitHub\\build\\downloads\\1710411808473_11488_1"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "automatic_downloads": 1,
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": true
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1710411809.577][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1710411809.588][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --no-sandbox --no-service-autorun --password-store=basic --proxy-bypass-list=<-loopback> --remote-allow-origins=* --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Temp\scoped_dir9164_1866695206" --window-size=900,1080 data:,
+[1710411812.432][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1710411812.541][INFO]: [85344315ef32912001b1cff3fb12c940] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "114.0.5735.134",
+      "chrome": {
+         "chromedriverVersion": "114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052})",
+         "userDataDir": "C:\\Temp\\scoped_dir9164_1866695206"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:54148"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "accept",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "85344315ef32912001b1cff3fb12c940"
+}
+[1710411812.739][INFO]: [85344315ef32912001b1cff3fb12c940] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1710411812.739][INFO]: [85344315ef32912001b1cff3fb12c940] RESPONSE SetTimeouts
+[1710411812.749][INFO]: [85344315ef32912001b1cff3fb12c940] COMMAND Navigate {
+   "url": "https://resources.github.com"
+}
+[1710411812.749][INFO]: Waiting for pending navigations...
+[1710411812.750][INFO]: Done waiting for pending navigations. Status: ok
+[1710411813.110][INFO]: Waiting for pending navigations...
+[1710411814.020][INFO]: Done waiting for pending navigations. Status: ok
+[1710411814.020][INFO]: [85344315ef32912001b1cff3fb12c940] RESPONSE Navigate
+[1710411814.033][INFO]: [85344315ef32912001b1cff3fb12c940] COMMAND Quit {
+}
+[1710411814.069][INFO]: [85344315ef32912001b1cff3fb12c940] RESPONSE Quit

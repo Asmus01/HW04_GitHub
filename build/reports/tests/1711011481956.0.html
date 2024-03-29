@@ -1,0 +1,555 @@
+<html><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Ваш адрес в Великобритании - Интернет-магазины и eBay Англии - посредник по покупке продаже и доставке из Великобритании</title>
+		<meta name="robots" content="index, follow">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		 <meta name="description" content=" Ebay Англии доставка, посредник, интернет-магазины, интернет-аукцион ebay.co.uk, покупки в Великобритании, антикварные книги на английском языке.">
+		<meta name="keywords" content=" Доставка из Англии, посредник, купить на eBay, продать на ebay, paypal, доставка, интернет магазины Англии, аукцион ebay co uk, amazon co uk, интернет аукцион, одежда сток,">
+		<script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/YurWEBlMIwR4EqFPncmQTkxQ/recaptcha__ru.js" crossorigin="anonymous" integrity="sha384-pj6LH0Ed4iLWv0zhcrJdStMjMekGck7l4KVhw8kYa+69yId9oht/Mqs5dLZPoqi/"></script><script src="/assets/libs/jquery/jquery.min.js"></script>
+		<script src="/assets/libs/bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="/assets/libs/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/assets/libs/fontawesome/css/all.min.css">
+
+		<link rel="stylesheet" href="/assets/libs/bootstrap-checkbox/bootstrap-checkbox.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/mobile.css">
+	</head>
+	<body>
+
+
+
+		<header id="header-auth">
+			<div class="top-bar">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-2 padding-0"></div>
+						<div class="col-sm-8 padding-0">
+							<div class="row">
+								<div class="col-sm-5">
+									<img src="img/logo.png" width="135" height="40" alt="AlfaParcel - Личный кабинет" class="mt-2 float-right">
+								</div>
+								<div class="col-sm-7 padding-0 text-left">
+									<h1>Личный кабинет</h1>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-2 padding-0"></div>
+					</div>
+				</div>
+			</div>
+		</header><style type="text/css">
+
+
+#login-frm {
+	margin:80px 20px 40px;
+}
+.btn-alfa-noactive-left {
+	min-width:220px;
+	border-radius: 1.2rem;
+	font-size:16px;
+	font-weight:500;
+	background-color:#EBE3D3;
+	border:1px solid #EBE3D3;
+	color: #644A3D;
+	border-top-right-radius:0px;
+	border-bottom-right-radius:0px;
+}
+.btn-alfa-active-right {
+	min-width:220px;
+	border-radius: 1.2rem;
+	font-size:16px;
+	font-weight:500;
+	background-color:#F86569;
+	border:1px solid #F86569;
+	color: #FFFFFF;
+	border-top-left-radius:0px;
+	border-bottom-left-radius:0px;
+}
+.btn-alfa-active:hover,.btn-alfa-active-right:hover {
+	color: #FFFFFF;
+}
+
+.abc-checkbox-danger, .abc-checkbox-danger label, .abc-checkbox-danger a {
+	font-size:14px !important;
+	line-height: 40px !important;
+	white-space:nowrap;
+}
+
+.btn-alfa-noactive:hover {
+	background-color:#F86569;
+	border:1px solid #F86569;
+	color: #FFFFFF;
+}
+</style>
+
+
+
+
+
+
+<script src="/assets/libs/jquery/jquery.min.js"></script>
+<script src="/assets/libs/bootstrap/js/popper.min.js"></script>
+<script src="/assets/libs/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="/js/functions.js"></script>
+
+<script type="text/javascript" language="javascript">
+//<![CDATA[
+	function toTranslit( text ) {
+		return text.replace( /([а-яё])|([\s_-`])|([^a-z\d])/gi,
+			function( all, ch, space, words, i ) {
+				if ( space || words ) {
+					return space ? ' ' : '';
+				}
+
+				var code = ch.charCodeAt(0),
+					next = text.charAt( i + 1 ),
+					index = code == 1025 || code == 1105 ? 0 :
+						code > 1071 ? code - 1071 : code - 1039,
+					t = ['yo','a','b','v','g','d','e','zh',
+						'z','i','y','k','l','m','n','o','p',
+						'r','s','t','u','f','h','c','ch','sh',
+						'shch','','y','','e','yu','ya'
+					],
+					next = next && next.toUpperCase() === next ? 1 : 0;
+
+				return ch.toUpperCase() === ch ? next ? t[ index ].toUpperCase() :
+						t[ index ].substr(0,1).toUpperCase() +
+						t[ index ].substring(1) : t[ index ];
+			}
+		);
+	}
+
+
+	function viewCapsWarning(e, id, box) {
+		e = (e) ? e : window.event;
+		var charCode = false;
+		if (e.which) {
+			charCode = e.which;
+		} else if (e.keyCode) {
+			charCode = e.keyCode;
+		}
+		var character = String.fromCharCode(charCode);
+		var shifton = false;
+		if (e.shiftKey) {
+			shifton = e.shiftKey;
+		} else if (e.modifiers) {
+			shifton = !!(e.modifiers & 4);
+		}
+		var divObj = document.getElementById(id);
+		if (character >= 'a' && character <= 'z')
+			if (shifton) { // caps lock on
+				divObj.style.visibility = 'visible';
+				divObj.style.display = 'block';
+				box.style.background = '#FFFFDD';
+			} else {
+				divObj.style.visibility = 'hidden';
+				divObj.style.display = 'none';
+				box.style.background = '#FFFFFF';
+			}
+		else if (character >= 'A' && character <= 'Z')
+			if (!shifton) { // caps lock on
+				divObj.style.visibility = 'visible';
+				divObj.style.display = 'block';
+				box.style.background = '#FFFFDD';
+			} else {
+				divObj.style.visibility = 'hidden';
+				divObj.style.display = 'none';
+				box.style.background = '#FFFFFF';
+			}
+	}
+
+	$(function() {
+
+		$(document).on('click','#signup',function() {
+			var obj = this;
+			$(obj).attr('disabled', true).addClass('disabled').hide();
+			$("#error_container").attr('hidden','hidden');
+			$('input').removeClass('error');
+			var form = this.form;
+			var error = false;
+			var error_message = '';
+			var name = $.trim($('#name').val());
+			var lname = $.trim($('#lname').val());
+			var email = $.trim($('#email').val());
+			//var coemail = $.trim($('#coemail').val());
+			var password = $.trim($('#password').val());
+			//var copassword = $.trim($('#copassword').val());
+			var forum_un = $.trim($('#forum_un').val());
+
+			
+			var is_accept = $('#accepttos');
+
+			if($(is_accept).is(":checked")) {
+				$("#signup").removeAttr("disabled").removeClass("disabled");
+			} else {
+				$("#signup").attr("disabled",true).addClass("disabled");
+				error = true;
+				$(is_accept).addClass('error');
+				error_message += "<li class=\"error\"> Подтвердите, что вы прочитали и согласны с правилами обслуживания</li>";
+			}
+
+			if(name.length == 0) {
+				error = true;
+				$('#name').addClass('error');
+				error_message += '<li class=\"error\">Поле &quot;Ваше имя&quot; является обязательным</li>';
+			}
+
+			if(lname.length == 0) {
+				error = true;
+				$('#lname').addClass('error');
+				error_message += '<li class=\"error\">Поле  &quot;Ваше имя&quot; является обязательным</li>';
+			}
+
+			if(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i.test($('#email').val())==false) {
+				error = true;
+				$('#email').addClass('error');
+				error_message += '<li class=\"error\">Ошибка ввода &quot;Email&quot; адреса</li>';
+			}
+
+			
+			if(password.length < 5) {
+				error = true;
+				$('#password').addClass('error');
+				error_message += "<li class=\"error\">Минимальная длина пароля должна быть не менее 5 символов</li>";
+			}
+			
+			
+
+
+			if(!error) {
+
+				$.ajax({
+					type: "POST",
+					url: "https://alfaparcel-support.com/signup.php?do=chk-email",
+					dataType: "json",
+					data: {
+						"do": "chk-email",
+						"email": email
+					},
+					success: function(result) {
+						if(result) {
+
+
+
+							$.ajax({
+								type: "POST",
+								url: "https://alfaparcel-support.com/signup.php?do=chk-forum",
+								dataType: "json",
+								data: {
+									"do": "chk-forum",
+									"email": email,
+									"forum_un": forum_un
+								},
+								success: function(result) {
+									if(result != true) {
+										$('#'+result.input).addClass('error');
+										error = true;
+										if(result.input == 'forum_un') {
+											error_message += "<li class=\"error\">Введенное имя пользователя уже используется другим пользователем форума</li>";
+										}
+										if(result.input == 'email') {
+											error_message += "<li class=\"error\">Введенный email уже используется другим пользователем форума</li>";
+										}
+										if(error) {
+											$("#error_container").find('span').html('<ul>' + error_message + '</ul>').show();
+											$(obj).removeAttr('disabled').removeClass('disabled').show();
+											$("#error_container").removeAttr('hidden');
+										}
+									} else {
+										$("#regform").submit();
+									}
+								}
+							})
+
+
+
+
+
+							
+						} else {
+							error = true;
+							$('#email').addClass('error');
+							error_message += '<li class=\"error\">Такой &quot;Email&quot; уже зарегистрирован в системе</li>';
+							if(error) {
+								$("#error_container").find('span').html('<ul>' + error_message + '</ul>').show();
+								$(obj).removeAttr('disabled').removeClass('disabled').show();
+								$("#error_container").removeAttr('hidden');
+							}
+						}
+					}
+				});
+			}
+			if(error) {
+				$("#error_container").find('span').html('<ul>' + error_message + '</ul>').show();
+				$(obj).removeAttr('disabled').removeClass('disabled').show();
+				$("#error_container").removeAttr('hidden');
+			}
+
+			return false;
+		});
+
+		var reloaded  = function() {
+			for(i in sessionStorage) {
+				$('#' + i).val(sessionStorage.getItem(i));
+			};
+		}
+
+		window.onload = function() {
+			var loaded = sessionStorage.getItem('loaded');
+			if(loaded) {
+				reloaded();
+			} else {
+				sessionStorage.setItem('loaded', true);
+			}
+		}
+
+
+		$(document).on('keypress keyup click focus blur','input[name=name], input[name=lname]',function() {
+			var _value = $(this).val();
+			var value = $.trim(toTranslit(_value));
+			$(this).val(value);
+			sessionStorage.setItem($(this).attr('name'), $(this).val());
+		});
+
+
+		$(document).on('keypress keyup click focus blur','input,textarea',function() {
+			var _value = $(this).val();
+			var value = _value.replace(/<\/?[^>]+>/gi, '');
+			
+			var re = /\$|,|#|~|`|\%|\*|\^|\&|\(|\)|\+|\=|\[|\}|\{|\;|\:|\'|\"|\<|\>|\?|\||\\|\!|\$|/g;
+			
+			value = value.replace(re,'');
+			if(value != _value)
+				$(this).val(value);
+			sessionStorage.setItem($(this).attr('name'), $(this).val());
+		});
+
+		$("#accepttos").click(function() {
+			if($(this).is(":checked")) {
+				$("#signup").removeAttr("disabled").removeClass("disabled");
+			} else {
+				$("#signup").attr("disabled",true).addClass("disabled");
+			}
+		});
+
+		
+
+	});
+
+$(document).ready(function() {
+
+	$('*[data-toggle="tooltip"]').tooltip();
+
+
+	/*
+	$('#tooltip').qtip({
+		content: {
+			text: false
+		},
+		style: 'light'
+	});
+
+	$('.tooltip').tooltip('destroy');
+	$('.tooltip').tooltip();
+	*/
+
+});
+//]]>
+</script>
+<script src="//www.google.com/recaptcha/api.js?hl=ru"></script>
+
+
+
+
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<article id="login-frm" class="text-center">
+							<a href="/" class="btn btn-alfa-noactive-left text-center">Вход на сайт</a><a href="/signup.php" class="btn btn-alfa-active-right text-center">Регистрация</a>
+						</article>
+
+						<div class="row">
+							<div class="col-sm-4"></div>
+							<div class="col-sm-4">
+								<form action="" method="post" id="regform" name="0:registration">
+									<input type="hidden" name="register" value="true">
+									<input type="hidden" name="l" value="ru">
+									<div class="form-group row">
+										<label for="name" class="col-sm-4 col-form-label">Имя</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control alphaNumericOnly" id="name" name="name" placeholder="латинский шрифт" data-toggle="tooltip" data-placement="top" title="" data-original-title="латинский шрифт" style="">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="lname" class="col-sm-4 col-form-label">Фамилия</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control alphaNumericOnly" id="lname" name="lname" placeholder="латинский шрифт" data-toggle="tooltip" data-placement="top" title="" data-original-title="латинский шрифт" style="">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="email" class="col-sm-4 col-form-label">Email</label>
+										<div class="col-sm-8">
+											<input type="email" class="form-control" id="email" name="email" placeholder="" style="">
+										</div>
+									</div>
+									<div class="form-group row">
+											<label for="password" class="col-sm-4 col-form-label">Password</label>
+											<div class="col-sm-8">
+												<input type="password" class="form-control" id="password" name="password" placeholder="" style="">
+											</div>
+									</div>
+									<div class="form-group row">
+										<div class="col-sm-12">
+											<div class="form-check col-sm-12 checkbox abc-checkbox-danger margin-0 padding-0">
+												<input class="form-check-input" type="checkbox" id="accepttos" name="accepttos" style="">
+												<label class="form-check-label" for="accepttos">Я прочитал и согласен</label>
+												 с <a href="https://alfaparcel.com/terms/" target="_blank">правилами обслуживания</a>
+											</div>
+
+										</div>
+									</div>
+
+
+
+									<div class="form-group row">
+										<div class="col-sm-1"></div>
+										<div class="col-sm-10">
+											<div class="g-recaptcha" data-sitekey="6LeF6hoUAAAAADlkgLs_rqIR0TyCp5P3v-GI4kKN"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-9gdfegrazt9c" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeF6hoUAAAAADlkgLs_rqIR0TyCp5P3v-GI4kKN&amp;co=aHR0cHM6Ly9hbGZhcGFyY2VsLXN1cHBvcnQuY29tOjQ0Mw..&amp;hl=ru&amp;v=YurWEBlMIwR4EqFPncmQTkxQ&amp;size=normal&amp;cb=ghz232i6g0mm"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+										</div>
+										<div class="col-sm-1"></div>
+									</div>
+
+
+
+									<div class="form-group row" hidden="" id="error_container">
+										<div class="col-sm-12">
+											<p class="error"><img src="img/X.png" width="23" height="23" alt="">&nbsp;<strong>Ошибка</strong><br><span></span></p>
+										</div>
+									</div>
+
+
+									<div class="form-group row">
+										<div class="col-sm-12 text-center">
+											<input type="submit" class="btn btn-alfa-dark text-center" id="signup" value="Создать аккаунт">
+										</div>
+									</div>
+
+
+								</form>
+							</div>
+							<div class="col-sm-4"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-right: .25rem;
+	padding-left: .25rem;
+}
+</style>
+		<footer id="footer" class="mt-1">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-sm-4" nowrap="">
+								<a class="navbar-brand pull-left no-wrap" href="#">
+									<img src="/img/logo.png" width="100" alt="">
+								</a>
+								© 2024, Alfaparcel Ltd
+							</div>
+							<div class="col-sm-8">
+								<nav class="navbar navbar-expand-lg navbar-light">
+									<!-- <a class="navbar-brand" href="#">Navbar</a> -->
+									<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavFooter" aria-controls="navbarNavFooter" aria-expanded="false" aria-label="Toggle navigation">
+									
+									<span class="navbar-toggler-btn">Меню</span> <span class="navbar-toggler-message">Нажмите на меню для открытия</span>
+									</button>
+									<div class="navbar-collapse collapse" id="navbarNavFooter">
+										<div class="navbar-nav">
+											<a class="nav-item nav-link" href="/terms.php" target="_blank">Условия и правила</a>
+											<span>|</span>
+											<a class="nav-item nav-link " href="/privacy-policy.php" target="_blank"><!-- active -->Политика конфиденциальности</a>
+											<span>|</span>
+											<a class="nav-item nav-link" href="/fullpricelist.php" target="_blank">Тарифы</a>
+											<span>|</span>
+											<a class="nav-item nav-link" href="/company.php" target="_blank">О компании</a>
+										</div>
+									</div>
+								</nav>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<img src="/img/mir.png" height="35" border="0" alt="">
+								&nbsp;&nbsp;
+								10 Mt Pleasant Trading Estate, Mount Pleasant Road, Wisbech, Cambridgeshire, PE13 3FF United Kingdom, reg number: 06698023
+							</div>
+						</div>
+						<br><br><br>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+<div class="breakingnews" style="position: fixed;bottom: 0;width: 100%;padding: 10px 20px;background:#ff9900;text-align: center;box-sizing: border-box;z-index: 2;">
+	<a style="color: #fffbf2;font-weight: 500;font-size: 16px;" href="/cp/breakingnews.php">Имеются временные технические проблемы у Intellect Money</a>
+</div>
+		<script type="text/javascript">
+		<!--
+		//-->
+		</script>
+		<style type="text/css">
+#login-frm {
+	margin:80px 20px 40px;
+}
+.btn-alfa-noactive {
+	min-width:220px;
+	border-radius: 1.2rem;
+	font-size:16px;
+	font-weight:500;
+	background-color:#EBE3D3;
+	border:1px solid #EBE3D3;
+	color: #644A3D;
+	border-top-left-radius:0px;
+	border-bottom-left-radius:0px;
+}
+.btn-alfa-active {
+	min-width:220px;
+	border-radius: 1.2rem;
+	font-size:16px;
+	font-weight:500;
+	background-color:#F86569;
+	border:1px solid #F86569;
+	color: #FFFFFF;
+	border-top-right-radius:0px;
+	border-bottom-right-radius:0px;
+}
+.btn-alfa-active:hover {
+	color: #FFFFFF;
+}
+.btn-alfa-noactive:hover {
+	background-color:#F86569;
+	border:1px solid #F86569;
+	color: #FFFFFF;
+}
+		</style>
+	
+<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;" class="g-recaptcha-bubble-arrow"></div><div style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;" class="g-recaptcha-bubble-arrow"></div><div style="z-index: 2000000000; position: relative;"><iframe title="текущую проверку reCAPTCHA можно пройти в течение ещё двух минут" style="width: 100%; height: 100%;" name="c-9gdfegrazt9c" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/bframe?hl=ru&amp;v=YurWEBlMIwR4EqFPncmQTkxQ&amp;k=6LeF6hoUAAAAADlkgLs_rqIR0TyCp5P3v-GI4kKN"></iframe></div></div></body></html>

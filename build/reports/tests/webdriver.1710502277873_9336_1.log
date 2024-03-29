@@ -1,0 +1,1089 @@
+[1710502278.381][INFO]: Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 23398
+[1710502278.381][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1710502278.738][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox", "--remote-allow-origins=*", "--window-size=900,1080" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "C:\\Users\\Ludmila\\IdeaProjects\\HW04_GitHub\\build\\downloads\\1710502277812_9336_1",
+               "plugins.always_open_pdf_externally": true,
+               "profile.default_content_setting_values.automatic_downloads": 1,
+               "safebrowsing.enabled": true
+            }
+         },
+         "pageLoadStrategy": "normal",
+         "unhandledPromptBehavior": "accept"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox", "--remote-allow-origins=*", "--window-size=900,1080" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "C:\\Users\\Ludmila\\IdeaProjects\\HW04_GitHub\\build\\downloads\\1710502277812_9336_1",
+            "plugins.always_open_pdf_externally": true,
+            "profile.default_content_setting_values.automatic_downloads": 1,
+            "safebrowsing.enabled": true
+         }
+      },
+      "pageLoadStrategy": "normal",
+      "unhandledPromptBehavior": "accept"
+   }
+}
+[1710502278.780][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "C:\\Users\\Ludmila\\IdeaProjects\\HW04_GitHub\\build\\downloads\\1710502277812_9336_1"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "automatic_downloads": 1,
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": true
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1710502278.781][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1710502278.787][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --no-sandbox --no-service-autorun --password-store=basic --proxy-bypass-list=<-loopback> --remote-allow-origins=* --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Temp\scoped_dir3976_250330403" --window-size=900,1080 data:,
+[1710502279.427][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1710502279.439][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "114.0.5735.134",
+      "chrome": {
+         "chromedriverVersion": "114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052})",
+         "userDataDir": "C:\\Temp\\scoped_dir3976_250330403"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:59025"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "accept",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "aae5f8cd8a2df1e046946eb33db8e6ca"
+}
+[1710502279.641][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1710502279.641][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE SetTimeouts
+[1710502279.652][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND Navigate {
+   "url": "https://resources.github.com"
+}
+[1710502279.652][INFO]: Waiting for pending navigations...
+[1710502279.655][INFO]: Done waiting for pending navigations. Status: ok
+[1710502279.874][INFO]: Waiting for pending navigations...
+[1710502280.716][INFO]: Done waiting for pending navigations. Status: ok
+[1710502280.716][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE Navigate
+[1710502280.809][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502280.809][INFO]: Waiting for pending navigations...
+[1710502280.810][INFO]: Done waiting for pending navigations. Status: ok
+[1710502280.824][INFO]: Waiting for pending navigations...
+[1710502280.825][INFO]: Done waiting for pending navigations. Status: ok
+[1710502280.825][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502280.833][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502280.833][INFO]: Waiting for pending navigations...
+[1710502280.833][INFO]: Done waiting for pending navigations. Status: ok
+[1710502280.848][INFO]: Waiting for pending navigations...
+[1710502280.848][INFO]: Done waiting for pending navigations. Status: ok
+[1710502280.848][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502280.865][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502280.865][INFO]: Waiting for pending navigations...
+[1710502280.922][INFO]: Done waiting for pending navigations. Status: ok
+[1710502280.934][INFO]: Waiting for pending navigations...
+[1710502280.968][INFO]: Done waiting for pending navigations. Status: ok
+[1710502280.968][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502280.973][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502280.973][INFO]: Waiting for pending navigations...
+[1710502280.980][INFO]: Done waiting for pending navigations. Status: ok
+[1710502280.995][INFO]: Waiting for pending navigations...
+[1710502280.996][INFO]: Done waiting for pending navigations. Status: ok
+[1710502280.996][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502281.002][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502281.002][INFO]: Waiting for pending navigations...
+[1710502281.002][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.009][INFO]: Waiting for pending navigations...
+[1710502281.009][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.010][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502281.014][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElements {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502281.014][INFO]: Waiting for pending navigations...
+[1710502281.015][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.074][INFO]: Waiting for pending navigations...
+[1710502281.081][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.081][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElements [  ]
+[1710502281.306][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502281.306][INFO]: Waiting for pending navigations...
+[1710502281.322][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.393][INFO]: Waiting for pending navigations...
+[1710502281.393][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.393][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502281.397][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502281.398][INFO]: Waiting for pending navigations...
+[1710502281.398][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.407][INFO]: Waiting for pending navigations...
+[1710502281.408][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.408][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502281.414][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502281.414][INFO]: Waiting for pending navigations...
+[1710502281.414][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.421][INFO]: Waiting for pending navigations...
+[1710502281.422][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.422][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502281.426][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502281.426][INFO]: Waiting for pending navigations...
+[1710502281.427][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.434][INFO]: Waiting for pending navigations...
+[1710502281.435][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.435][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502281.439][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502281.440][INFO]: Waiting for pending navigations...
+[1710502281.440][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.447][INFO]: Waiting for pending navigations...
+[1710502281.447][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.447][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502281.451][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElements {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502281.451][INFO]: Waiting for pending navigations...
+[1710502281.451][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.458][INFO]: Waiting for pending navigations...
+[1710502281.459][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.459][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElements [  ]
+[1710502281.677][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502281.677][INFO]: Waiting for pending navigations...
+[1710502281.678][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.689][INFO]: Waiting for pending navigations...
+[1710502281.690][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.690][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502281.694][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502281.694][INFO]: Waiting for pending navigations...
+[1710502281.695][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.703][INFO]: Waiting for pending navigations...
+[1710502281.704][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.704][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502281.708][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502281.708][INFO]: Waiting for pending navigations...
+[1710502281.709][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.715][INFO]: Waiting for pending navigations...
+[1710502281.716][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.716][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502281.719][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502281.719][INFO]: Waiting for pending navigations...
+[1710502281.720][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.727][INFO]: Waiting for pending navigations...
+[1710502281.728][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.728][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502281.732][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502281.732][INFO]: Waiting for pending navigations...
+[1710502281.732][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.739][INFO]: Waiting for pending navigations...
+[1710502281.739][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.739][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502281.742][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElements {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502281.743][INFO]: Waiting for pending navigations...
+[1710502281.743][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.750][INFO]: Waiting for pending navigations...
+[1710502281.750][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.750][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElements [  ]
+[1710502281.959][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502281.959][INFO]: Waiting for pending navigations...
+[1710502281.959][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.967][INFO]: Waiting for pending navigations...
+[1710502281.967][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.967][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502281.971][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502281.971][INFO]: Waiting for pending navigations...
+[1710502281.972][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.980][INFO]: Waiting for pending navigations...
+[1710502281.980][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.980][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502281.985][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502281.985][INFO]: Waiting for pending navigations...
+[1710502281.985][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.992][INFO]: Waiting for pending navigations...
+[1710502281.993][INFO]: Done waiting for pending navigations. Status: ok
+[1710502281.993][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502281.997][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502281.997][INFO]: Waiting for pending navigations...
+[1710502281.997][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.005][INFO]: Waiting for pending navigations...
+[1710502282.005][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.005][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502282.009][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502282.009][INFO]: Waiting for pending navigations...
+[1710502282.010][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.017][INFO]: Waiting for pending navigations...
+[1710502282.017][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.017][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502282.020][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElements {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502282.020][INFO]: Waiting for pending navigations...
+[1710502282.021][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.028][INFO]: Waiting for pending navigations...
+[1710502282.028][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.028][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElements [  ]
+[1710502282.239][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502282.239][INFO]: Waiting for pending navigations...
+[1710502282.240][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.251][INFO]: Waiting for pending navigations...
+[1710502282.252][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.252][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502282.255][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502282.255][INFO]: Waiting for pending navigations...
+[1710502282.256][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.263][INFO]: Waiting for pending navigations...
+[1710502282.264][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.264][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502282.268][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502282.268][INFO]: Waiting for pending navigations...
+[1710502282.269][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.277][INFO]: Waiting for pending navigations...
+[1710502282.277][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.277][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502282.280][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502282.280][INFO]: Waiting for pending navigations...
+[1710502282.281][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.288][INFO]: Waiting for pending navigations...
+[1710502282.289][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.289][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502282.293][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502282.293][INFO]: Waiting for pending navigations...
+[1710502282.293][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.300][INFO]: Waiting for pending navigations...
+[1710502282.300][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.300][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502282.303][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElements {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502282.303][INFO]: Waiting for pending navigations...
+[1710502282.304][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.311][INFO]: Waiting for pending navigations...
+[1710502282.311][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.311][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElements [  ]
+[1710502282.520][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502282.520][INFO]: Waiting for pending navigations...
+[1710502282.520][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.527][INFO]: Waiting for pending navigations...
+[1710502282.527][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.527][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502282.531][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502282.531][INFO]: Waiting for pending navigations...
+[1710502282.531][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.539][INFO]: Waiting for pending navigations...
+[1710502282.540][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.540][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502282.544][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502282.544][INFO]: Waiting for pending navigations...
+[1710502282.545][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.551][INFO]: Waiting for pending navigations...
+[1710502282.552][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.552][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502282.555][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502282.555][INFO]: Waiting for pending navigations...
+[1710502282.556][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.563][INFO]: Waiting for pending navigations...
+[1710502282.564][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.564][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502282.568][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502282.568][INFO]: Waiting for pending navigations...
+[1710502282.568][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.574][INFO]: Waiting for pending navigations...
+[1710502282.575][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.575][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502282.578][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElements {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502282.578][INFO]: Waiting for pending navigations...
+[1710502282.579][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.585][INFO]: Waiting for pending navigations...
+[1710502282.586][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.586][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElements [  ]
+[1710502282.800][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502282.800][INFO]: Waiting for pending navigations...
+[1710502282.802][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.810][INFO]: Waiting for pending navigations...
+[1710502282.811][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.811][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502282.814][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502282.814][INFO]: Waiting for pending navigations...
+[1710502282.814][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.822][INFO]: Waiting for pending navigations...
+[1710502282.822][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.822][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502282.826][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502282.826][INFO]: Waiting for pending navigations...
+[1710502282.826][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.832][INFO]: Waiting for pending navigations...
+[1710502282.833][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.833][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502282.836][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502282.836][INFO]: Waiting for pending navigations...
+[1710502282.836][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.844][INFO]: Waiting for pending navigations...
+[1710502282.844][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.844][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502282.848][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502282.848][INFO]: Waiting for pending navigations...
+[1710502282.848][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.855][INFO]: Waiting for pending navigations...
+[1710502282.855][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.855][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502282.858][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElements {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502282.858][INFO]: Waiting for pending navigations...
+[1710502282.859][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.865][INFO]: Waiting for pending navigations...
+[1710502282.866][INFO]: Done waiting for pending navigations. Status: ok
+[1710502282.866][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElements [  ]
+[1710502283.079][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502283.079][INFO]: Waiting for pending navigations...
+[1710502283.081][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.092][INFO]: Waiting for pending navigations...
+[1710502283.093][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.093][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502283.096][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502283.096][INFO]: Waiting for pending navigations...
+[1710502283.096][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.104][INFO]: Waiting for pending navigations...
+[1710502283.105][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.105][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502283.109][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502283.109][INFO]: Waiting for pending navigations...
+[1710502283.110][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.116][INFO]: Waiting for pending navigations...
+[1710502283.116][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.116][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502283.119][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502283.119][INFO]: Waiting for pending navigations...
+[1710502283.120][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.127][INFO]: Waiting for pending navigations...
+[1710502283.128][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.128][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502283.132][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502283.132][INFO]: Waiting for pending navigations...
+[1710502283.132][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.139][INFO]: Waiting for pending navigations...
+[1710502283.139][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.139][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502283.142][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElements {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502283.142][INFO]: Waiting for pending navigations...
+[1710502283.143][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.150][INFO]: Waiting for pending navigations...
+[1710502283.150][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.150][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElements [  ]
+[1710502283.359][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502283.359][INFO]: Waiting for pending navigations...
+[1710502283.360][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.367][INFO]: Waiting for pending navigations...
+[1710502283.368][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.368][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502283.372][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502283.372][INFO]: Waiting for pending navigations...
+[1710502283.373][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.383][INFO]: Waiting for pending navigations...
+[1710502283.384][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.384][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502283.388][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502283.388][INFO]: Waiting for pending navigations...
+[1710502283.389][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.397][INFO]: Waiting for pending navigations...
+[1710502283.397][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.398][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502283.401][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502283.401][INFO]: Waiting for pending navigations...
+[1710502283.402][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.409][INFO]: Waiting for pending navigations...
+[1710502283.410][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.410][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502283.414][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502283.414][INFO]: Waiting for pending navigations...
+[1710502283.414][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.421][INFO]: Waiting for pending navigations...
+[1710502283.421][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.421][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502283.425][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElements {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502283.425][INFO]: Waiting for pending navigations...
+[1710502283.425][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.432][INFO]: Waiting for pending navigations...
+[1710502283.433][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.433][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElements [  ]
+[1710502283.637][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502283.637][INFO]: Waiting for pending navigations...
+[1710502283.638][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.645][INFO]: Waiting for pending navigations...
+[1710502283.646][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.646][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502283.649][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502283.649][INFO]: Waiting for pending navigations...
+[1710502283.649][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.658][INFO]: Waiting for pending navigations...
+[1710502283.658][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.658][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502283.663][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502283.663][INFO]: Waiting for pending navigations...
+[1710502283.664][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.671][INFO]: Waiting for pending navigations...
+[1710502283.672][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.672][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502283.676][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502283.676][INFO]: Waiting for pending navigations...
+[1710502283.676][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.684][INFO]: Waiting for pending navigations...
+[1710502283.685][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.685][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502283.689][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502283.689][INFO]: Waiting for pending navigations...
+[1710502283.690][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.696][INFO]: Waiting for pending navigations...
+[1710502283.697][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.697][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502283.700][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElements {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502283.700][INFO]: Waiting for pending navigations...
+[1710502283.701][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.708][INFO]: Waiting for pending navigations...
+[1710502283.709][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.709][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElements [  ]
+[1710502283.918][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502283.918][INFO]: Waiting for pending navigations...
+[1710502283.919][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.926][INFO]: Waiting for pending navigations...
+[1710502283.926][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.926][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502283.930][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502283.930][INFO]: Waiting for pending navigations...
+[1710502283.930][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.939][INFO]: Waiting for pending navigations...
+[1710502283.939][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.939][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502283.943][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502283.943][INFO]: Waiting for pending navigations...
+[1710502283.944][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.951][INFO]: Waiting for pending navigations...
+[1710502283.951][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.951][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502283.954][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502283.954][INFO]: Waiting for pending navigations...
+[1710502283.955][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.963][INFO]: Waiting for pending navigations...
+[1710502283.964][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.964][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502283.968][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502283.968][INFO]: Waiting for pending navigations...
+[1710502283.969][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.976][INFO]: Waiting for pending navigations...
+[1710502283.977][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.977][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502283.980][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElements {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502283.980][INFO]: Waiting for pending navigations...
+[1710502283.981][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.988][INFO]: Waiting for pending navigations...
+[1710502283.989][INFO]: Done waiting for pending navigations. Status: ok
+[1710502283.989][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElements [  ]
+[1710502284.196][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502284.197][INFO]: Waiting for pending navigations...
+[1710502284.198][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.204][INFO]: Waiting for pending navigations...
+[1710502284.205][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.205][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502284.208][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502284.208][INFO]: Waiting for pending navigations...
+[1710502284.209][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.216][INFO]: Waiting for pending navigations...
+[1710502284.217][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.217][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502284.221][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502284.221][INFO]: Waiting for pending navigations...
+[1710502284.221][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.227][INFO]: Waiting for pending navigations...
+[1710502284.228][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.228][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502284.231][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502284.231][INFO]: Waiting for pending navigations...
+[1710502284.232][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.239][INFO]: Waiting for pending navigations...
+[1710502284.240][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.240][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502284.243][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502284.243][INFO]: Waiting for pending navigations...
+[1710502284.244][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.251][INFO]: Waiting for pending navigations...
+[1710502284.252][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.252][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502284.256][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElements {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502284.256][INFO]: Waiting for pending navigations...
+[1710502284.257][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.264][INFO]: Waiting for pending navigations...
+[1710502284.264][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.264][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElements [  ]
+[1710502284.478][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502284.478][INFO]: Waiting for pending navigations...
+[1710502284.479][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.487][INFO]: Waiting for pending navigations...
+[1710502284.488][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.488][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502284.491][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502284.491][INFO]: Waiting for pending navigations...
+[1710502284.492][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.500][INFO]: Waiting for pending navigations...
+[1710502284.500][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.500][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502284.504][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502284.504][INFO]: Waiting for pending navigations...
+[1710502284.505][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.511][INFO]: Waiting for pending navigations...
+[1710502284.512][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.512][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502284.515][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502284.515][INFO]: Waiting for pending navigations...
+[1710502284.516][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.523][INFO]: Waiting for pending navigations...
+[1710502284.523][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.524][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502284.527][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502284.527][INFO]: Waiting for pending navigations...
+[1710502284.528][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.535][INFO]: Waiting for pending navigations...
+[1710502284.535][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.535][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502284.538][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElements {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502284.538][INFO]: Waiting for pending navigations...
+[1710502284.539][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.545][INFO]: Waiting for pending navigations...
+[1710502284.546][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.546][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElements [  ]
+[1710502284.757][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502284.757][INFO]: Waiting for pending navigations...
+[1710502284.757][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.765][INFO]: Waiting for pending navigations...
+[1710502284.765][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.765][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502284.769][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502284.769][INFO]: Waiting for pending navigations...
+[1710502284.770][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.777][INFO]: Waiting for pending navigations...
+[1710502284.778][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.778][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502284.782][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502284.782][INFO]: Waiting for pending navigations...
+[1710502284.782][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.789][INFO]: Waiting for pending navigations...
+[1710502284.790][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.790][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502284.793][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElement {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502284.793][INFO]: Waiting for pending navigations...
+[1710502284.794][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.802][INFO]: Waiting for pending navigations...
+[1710502284.802][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.802][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"ul .d-flex"}
+  (Session info: chrome=114.0.5735.134)
+[1710502284.806][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[data-testid=site-navigation]"
+}
+[1710502284.806][INFO]: Waiting for pending navigations...
+[1710502284.807][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.813][INFO]: Waiting for pending navigations...
+[1710502284.814][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.814][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "05024B114EC5B49967AE78A986C1EC0D_element_17"
+}
+[1710502284.817][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND FindChildElements {
+   "id": "05024B114EC5B49967AE78A986C1EC0D_element_17",
+   "using": "css selector",
+   "value": "ul .d-flex"
+}
+[1710502284.817][INFO]: Waiting for pending navigations...
+[1710502284.818][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.825][INFO]: Waiting for pending navigations...
+[1710502284.826][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.826][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE FindChildElements [  ]
+[1710502284.834][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "var source = document.documentElement.outerHTML; \nif (!source) { source = new XMLSerializer().serializeToString(document); }\nreturn source;"
+}
+[1710502284.834][INFO]: Waiting for pending navigations...
+[1710502284.834][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.863][INFO]: Waiting for pending navigations...
+[1710502284.863][INFO]: Done waiting for pending navigations. Status: ok
+[1710502284.863][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE ExecuteScript "\u003Chtml lang=\"en\" dir=\"ltr\">\u003Chead>\u003Cmeta charset=\"utf-8\">\u003Cmeta name=\"viewport\" content=\"width=device-width\">\u003Cmeta http-equiv=\"Content-Security-Policy\" content=\"default-src 'none'; script-src 'self' an..."
+[1710502284.930][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND Screenshot {
+}
+[1710502284.930][INFO]: Waiting for pending navigations...
+[1710502284.931][INFO]: Done waiting for pending navigations. Status: ok
+[1710502285.126][INFO]: Waiting for pending navigations...
+[1710502285.127][INFO]: Done waiting for pending navigations. Status: ok
+[1710502285.127][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAAA3QAAAPgCAYAAAB6Zz7uAAABKWlDQ1BTa2lhAAAokX2QMUvDYBCGH0tBFJ10cHAICOKitrWmCoK0RYtrq9AqDmmaBrGNIYnoj/BHuPkHdNIfIYpODu4u4uDsmwZJQeodxz0c73ff3UFmDlk2B30vCuq1itFsHRrj74zJB2bZoc9ok..."
+[1710502285.176][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] COMMAND Quit {
+}
+[1710502285.216][INFO]: [aae5f8cd8a2df1e046946eb33db8e6ca] RESPONSE Quit
