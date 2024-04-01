@@ -4,6 +4,7 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import pages.RegistrationPage;
 
 import java.io.File;
 
@@ -35,26 +36,22 @@ public class TestDemoqa2origin {
         String dateOfBirth = "28 April,1990";
         String filePath = "src\\test\\data\\01.pdf";
 
-        open("/automation-practice-form");
-        $("#app").shouldHave(text("Student Registration Form"));//check page of site
-        Selenide.executeJavaScript("$('#RightSide_Advertisement').remove()");//delete ads-banners
-        Selenide.executeJavaScript("$('footer').remove()");//delete footer
 
-        $("#firstName").setValue(firstName);
-        $("#lastName").setValue(lastName);
-        $("#userEmail").setValue(email);
-
-
-        $("#genterWrapper").$(byText("Male")).click();// best
-
-        $("#userNumber").setValue(mobile).click();
-        $("#dateOfBirthInput").click();
+        new RegistrationPage().openPage()
+                .setFirstName(firstName)
+                .setLastName(lastName)
+                .setEmail(email)
+                .setGenter("Male")
+                .setMobile(mobile)
+                .setBirthDay("28","April","1990");
 
 
-        $(".react-datepicker__year-select").selectOption("1990");
-        $(".react-datepicker__month-select").selectOption("April");
 
-        $("div.react-datepicker__day--028").click();
+
+
+
+
+
 
 
         $("#subjectsInput").setValue("Maths").pressEnter();

@@ -1,18 +1,16 @@
 package selenide;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
-import static org.openqa.selenium.bidi.script.LocalValue.setValue;
 
-public class TestDemoqa {
+public class TestRZD {
 
     @BeforeAll
-     static void Beforeall() {
+     public static void Beforeall() {
         Configuration.browserSize = "1100x1080";
         Configuration.baseUrl = "https://www.rzd.ru";
         Configuration.browser = "firefox";
@@ -21,7 +19,9 @@ public class TestDemoqa {
 
     }
     @Test
-    void AutoTest() {
+    public void AutoTest() {
+
+
 
         String firstName = "Pavel";
         String lastName = "Gromov";
@@ -35,10 +35,13 @@ public class TestDemoqa {
 
         System.setProperty("chromeoptions.args", "--remote-allow-origins=*");
         open("https://www.rzd.ru");
+
+        Selenide.executeJavaScript("$('.cookie-alert').remove()");
+
         $("[data-test-id=profile]").click();
         $("[data-id=reg]").click();
         $("span.tooltip-ask__icon").hover();
-        sleep(2000);
+
 
         $("[data-test-id=registration-email]").setValue(email);
         $("[data-test-id=registration-login]").setValue(login);

@@ -39,6 +39,8 @@ public class TestDemoqa2 {
         $("#app").shouldHave(text("Student Registration Form"));//check page of site
         Selenide.executeJavaScript("$('#RightSide_Advertisement').remove()");//delete ads-banners
         Selenide.executeJavaScript("$('footer').remove()");//delete footer
+        Selenide.executeJavaScript("$('#fixedban').remove()");//delete ads-banner
+
 
         $("#firstName").setValue(firstName);
         $("#lastName").setValue(lastName);
