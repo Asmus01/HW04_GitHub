@@ -5,6 +5,7 @@ import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
+import pages.components.RegistrationResultsModal;
 
 import java.io.File;
 
@@ -25,6 +26,8 @@ public class TestDemoqa2origin {
     @Test
     void autoTest2() {
 
+        RegistrationPage registrationPage = new RegistrationPage();
+
         String firstName = "Pavel";
         String lastName = "Gromov";
         String email = "zxGrom@mail.com";
@@ -37,7 +40,7 @@ public class TestDemoqa2origin {
         String filePath = "src\\test\\data\\01.pdf";
 
 
-        new RegistrationPage().openPage()
+        registrationPage.openPage()
                 .setFirstName(firstName)
                 .setLastName(lastName)
                 .setEmail(email)
@@ -76,13 +79,21 @@ public class TestDemoqa2origin {
         $(byText("Karnal")).click();
         $("#submit").click();
 
-        $(".modal-dialog").shouldBe(appear);//check
-        $(".modal-content").shouldHave(text("Thanks for submitting the form"));//check
 
-        $("tbody").shouldHave(text(firstName), text(lastName), text(email))
-        .shouldHave(text(mobile)).shouldHave(text(currentAddress)).shouldHave(text(dateOfBirth))
-        .shouldHave(text("Maths, English")).shouldHave(text("Sports, Reading, Music"))
-        .shouldHave(text("Male")).shouldHave(text("01.pdf")).shouldHave(text("Haryana Karnal"));
+
+        registrationPage.verifyModalAppears()
+                        .verifyModalResults("Student Name", firstName + " Gromov")
+                        .verifyModalResults("Student Email", email)
+                        .verifyModalResults("Gender", "Male")
+                        .verifyModalResults("Mobile", mobile)
+                        .verifyModalResults("Date of Birth", dateOfBirth);
+
+
+
+
+        $("tbody").shouldHave(text(firstName), text(lastName), text(email),
+        text(mobile),text(currentAddress), text(dateOfBirth), text("Maths, English"), text("Sports, Reading, Music")
+        ,text("Male"), text("01.pdf"), text("Haryana Karnal"));
 
 
     }
