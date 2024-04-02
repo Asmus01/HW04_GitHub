@@ -10,9 +10,10 @@ import java.io.File;
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
-public class TestDemoqa2 {
+public class GenerationOfTestsDemoqa {
     @BeforeAll
     static void Beforeall() {
         Configuration.browserSize = "1100x1080";

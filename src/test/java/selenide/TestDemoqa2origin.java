@@ -6,6 +6,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
 import pages.components.RegistrationResultsModal;
+import pages.components.TestBase;
 
 import java.io.File;
 
@@ -15,14 +16,8 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class TestDemoqa2origin {
-    @BeforeAll
-    static void Beforeall() {
-        Configuration.browserSize = "1100x1080";
-        Configuration.baseUrl = "https://demoqa.com";
-        Configuration.browser = "firefox";
+public class TestDemoqa2origin extends TestBase {
 
-    }
     @Test
     void autoTest2() {
 
@@ -40,44 +35,20 @@ public class TestDemoqa2origin {
         String filePath = "src\\test\\data\\01.pdf";
 
 
-        registrationPage.openPage()
-                .setFirstName(firstName)
+        registrationPage.openPage();
+        registrationPage.setFirstName(firstName)
                 .setLastName(lastName)
                 .setEmail(email)
                 .setGenter("Male")
                 .setMobile(mobile)
-                .setBirthDay("28","April","1990");
-
-
-
-
-
-
-
-
-
-
-        $("#subjectsInput").setValue("Maths").pressEnter();
-        $("#subjectsInput").setValue("e");
-        $(byText("English")).click();
-
-
-        $("#hobbiesWrapper").$(byText("Sports")).click();
-        $("#hobbiesWrapper").$(byText("Reading")).click();
-        $("#hobbiesWrapper").$(byText("Music")).click();
-
-        $("input#uploadPicture").uploadFile(new File(filePath));
-
-
-        $("#currentAddress").setValue(currentAddress);
-
-        $("#state").click();
-
-        $("#react-select-3-option-2").click();
-
-        $("#city").click();
-        $(byText("Karnal")).click();
-        $("#submit").click();
+                .setBirthDay("28","April","1990")
+                .verifySubjects("Maths", "English")
+                .verifyHobbies("Sports", "Reading", "Music")
+                .verifyUpload(filePath)
+                .verifyAddress(currentAddress)
+                .verifyState("Haryana")
+                .verifyCity("Karnal")
+                .submit();
 
 
 
@@ -86,14 +57,11 @@ public class TestDemoqa2origin {
                         .verifyModalResults("Student Email", email)
                         .verifyModalResults("Gender", "Male")
                         .verifyModalResults("Mobile", mobile)
-                        .verifyModalResults("Date of Birth", dateOfBirth);
-
-
-
-
-        $("tbody").shouldHave(text(firstName), text(lastName), text(email),
-        text(mobile),text(currentAddress), text(dateOfBirth), text("Maths, English"), text("Sports, Reading, Music")
-        ,text("Male"), text("01.pdf"), text("Haryana Karnal"));
+                        .verifyModalResults("Subjects", "Maths, English")
+                        .verifyModalResults("Hobbies", "Sports")
+                        .verifyModalResults("Picture", "01.pdf")
+                        .verifyModalResults("Address", currentAddress)
+                        .verifyModalResults("State and City", "Haryana Karnal");
 
 
     }
