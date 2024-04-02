@@ -5,6 +5,8 @@ import com.codeborne.selenide.SelenideElement;
 import pages.components.CalendarComponent;
 import pages.components.RegistrationResultsModal;
 
+import java.io.File;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
@@ -14,6 +16,8 @@ public class RegistrationPage {
 
     CalendarComponent calendarComponent = new CalendarComponent();
     RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal();
+
+
 
 
     private final String TITLE_TEXT = "Student Registration Form";
@@ -88,6 +92,62 @@ public class RegistrationPage {
             return this;
 
     }
+
+        public RegistrationPage verifySubjects (String value1, String value2){
+
+            $("#subjectsInput").setValue(value1).pressEnter();
+            $("#subjectsInput").setValue("e");
+            $(byText(value2)).click();
+            return this;
+
+    }
+
+        public RegistrationPage verifyHobbies (String value01, String value02, String value03){
+
+            $("#hobbiesWrapper").$(byText("Sports")).click();
+            $("#hobbiesWrapper").$(byText("Reading")).click();
+            $("#hobbiesWrapper").$(byText("Music")).click();
+            return this;
+
+    }
+
+        public RegistrationPage verifyUpload (String value){
+
+            $("input#uploadPicture").uploadFile(new File(value));
+            return this;
+
+    }
+
+        public RegistrationPage verifyAddress (String value){
+
+            $("#currentAddress").setValue(value);
+            return this;
+
+    }
+
+        public RegistrationPage verifyState (String value){
+
+            $("#state").click();
+            $(byText(value)).click();
+            return this;
+
+    }
+
+        public RegistrationPage verifyCity (String value){
+
+            $("#city").click();
+            $(byText(value)).click();
+            return this;
+
+
+    }
+
+        public RegistrationPage submit () {
+
+            $("#submit").click();
+            return this;
+
+        }
 }
 
 

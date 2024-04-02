@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="selenide.TestDemoqa2origin" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-02T12:39:53" hostname="HOME-PC" time="31.51">
+<testsuite name="selenide.TestDemoqa2origin" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-02T13:35:29" hostname="HOME-PC" time="28.861">
   <properties/>
-  <testcase name="autoTest2()" classname="selenide.TestDemoqa2origin" time="31.51"/>
+  <testcase name="autoTest2()" classname="selenide.TestDemoqa2origin" time="28.861"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\Ludmila\IdeaProjects\HW04_GitHub\build\downloads\1712061593308_8696_1
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\Ludmila\IdeaProjects\HW04_GitHub\build\downloads\1712064929800_10232_1
 [Test worker] INFO com.codeborne.selenide.webdriver.BrowserResizer - Set browser size to 1100x1080
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=firefox Version=124.0.1 Platform=windows
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 7.2.3
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.19.1 build revision: abe0ee07dc
-[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: FirefoxDriver -> FirefoxDriver: firefox on windows (68b46c5c-117a-472a-88f2-99687f9ef477), downloadsFolder: C:\Users\Ludmila\IdeaProjects\HW04_GitHub\build\downloads\1712061593308_8696_1
-[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig, webDriver=FirefoxDriver: firefox on windows (68b46c5c-117a-472a-88f2-99687f9ef477), proxy=null, downloadsFolder=C:\Users\Ludmila\IdeaProjects\HW04_GitHub\build\downloads\1712061593308_8696_1] in 1 [size=1]
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: FirefoxDriver -> FirefoxDriver: firefox on windows (b188ff86-b038-4ae3-a6c6-5f4fc8eecfd4), downloadsFolder: C:\Users\Ludmila\IdeaProjects\HW04_GitHub\build\downloads\1712064929800_10232_1
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig, webDriver=FirefoxDriver: firefox on windows (b188ff86-b038-4ae3-a6c6-5f4fc8eecfd4), proxy=null, downloadsFolder=C:\Users\Ludmila\IdeaProjects\HW04_GitHub\build\downloads\1712064929800_10232_1] in 1 [size=1]
 [Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Add shutdown hook in 1 [size=1]
 ]]></system-err>
 </testsuite>
