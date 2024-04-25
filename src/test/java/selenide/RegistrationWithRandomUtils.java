@@ -1,72 +1,34 @@
 package selenide;
 
-import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
-import data.TestData;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.io.File;
+import pages.components.TestBase;
 
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
+import static utils.RandomUtils.randomEmail;
+import static utils.RandomUtils.randomString;
 
-public class GenerationOfTestsDemoqa extends TestData {
-
-//    static String firstName,
-//            lastName,
-//            email,
-//            mobile,
-//            subjects,
-//            currentAddress,
-//            login,
-//            password,
-//            dateOfBirth;
-
-    @BeforeAll
-    static void Beforeall() {
-        Configuration.browserSize = "1100x1080";
-        Configuration.baseUrl = "https://demoqa.com";
-        Configuration.browser = "firefox";
-//        firstName = "Pavel";     // bad practice
-//        lastName = "Gromov";
-//        email = "zxGrom@mail.com";
-//        mobile = "9054443211";
-//        subjects = "IT";
-//        currentAddress = "Ultimate st.,21";
-//        login = "asmus";
-//        password = "1234qwe";
-//        dateOfBirth = "28 April,1990";
-//
-    }
-
-    @BeforeEach
-    void BeforeEach() {
-
-//        firstName = getNewFirstName;
-//        lastName = getNewLastName;
-//        email = getNewEmail;
+public class RegistrationWithRandomUtils extends TestBase {
 
 
-    }
 
     @Test
-    void autoTest2() {
+    void autoTest() {
 
-//        String firstName = "Pavel";
-//        String lastName = "Gromov";
-//        String email = "zxGrom@mail.com";
-//        String mobile = "9054443211";
-//        String subjects = "IT";
-//        String currentAddress = "Ultimate st.,21";
-//        String login = "asmus";
-//        String password = "1234qwe";
-//        String dateOfBirth = "28 April,1990";
-//        String filePath = "src\\test\\data\\01.pdf";
+        String firstName = randomString(10);
+        String lastName = randomString(10);
+        String email = randomEmail();
+        String mobile = "9054443211";
+        String subjects = "IT";
+        String currentAddress = "Ultimate st.,21";
+        String login = "asmus";
+        String password = "1234qwe";
+        String dateOfBirth = "28 April,1990";
+        String filePath = "src\\test\\data\\01.pdf";
 
         open("/automation-practice-form");
         $("#app").shouldHave(text("Student Registration Form"));//check page of site
